@@ -1,0 +1,25 @@
+CREATE DATABASE inventory;
+USE inventory
+
+CREATE TABLE fruit_inventory (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    fruit_name VARCHAR(50) NOT NULL,
+    quantity INT NOT NULL
+);
+
+INSERT INTO fruit_inventory (fruit_name, quantity) VALUES
+('Apple', 50),
+('Banana', 50),
+('Pear', 50),
+('Orange', 50);
+
+
+CREATE TABLE transaction(
+    sale_number INT AUTO_INCREMENT PRIMARY KEY,
+    apple INT NOT NULL,
+    banana INT NOT NULL,
+    pear INT NOT NULL,
+    orange INT NOT NULL,
+    total_price DECIMAL(10, 2) NOT NULL
+);
+

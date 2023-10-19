@@ -1,0 +1,20 @@
+/* styles.css */
+
+.bg-grey {
+    background-color: grey;
+}
+
+/* .grey-background {
+    background-color: grey;
+} */
+
+
+.no-expand-button {
+    transition: none;
+    /* Disable transitions */
+}
+
+.MDBBtn:active {
+    transform: scale(1);
+    /* Reset the button scale on click (no expansion) */
+}
